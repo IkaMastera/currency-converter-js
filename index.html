@@ -7,10 +7,24 @@
     <title>Currency Converter JS</title>
   </head>
   <body>
+    <div class="wrapper">
+      <div class="app-details">
+        <img src="app-icon.svg" />
+        <h1 class="app-title">Currency Converter</h1>
+      </div>
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" value="100" />
+      <div class="dropdown">
+        <select id="from-currency-select"></select>
+        <select id="to-currency-select"></select>
+      </div>
+      <button id="convert-button">Convert</button>
+      <p id="result"></p>
+    </div>
     <!--Currency codes js-->
     <script src="currency-codes.js"></script>
     <!--API-->
-    <script src="api-key.js"></script>
+    <script src="api-key.js" class="app-icon"></script>
     <!--Main Logic JS -->
     <script src="script.js"></script>
   </body>
