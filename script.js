@@ -8,3 +8,10 @@ currencies.forEach((currency) => {
   option.text = currency;
   fromDropDown.add(option);
 });
+
+currencies.forEach((currency) => {
+  const option = document.createElement("option");
+  option.value = currency;
+  option.text = currency;
+  toDropDown.add(option);
+});
